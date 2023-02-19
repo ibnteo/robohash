@@ -4,7 +4,7 @@ Vector Robohash icons in PHP. Background pictures in PNG and WEBP.
 
 ![Robohash](robohash.png)
 
-'''php
+```php
 <?php
 require_once 'robohash.php';
 
@@ -13,7 +13,7 @@ echo Robohash::svg('id1', 300, ['clip'=>'circle', 'img_dir'=>'/images/robohash',
 echo Robohash::svg('id2', 300, ['clip'=>'hexagon', 'img_dir'=>'/images/robohash', 'ext'=>'png']);
 
 echo Robohash::svg('id3');
-'''
+```
 
 Links:
 
