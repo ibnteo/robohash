@@ -15,7 +15,7 @@ class Robohash {
 		$color = self::map(hexdec(substr($hash, 10, 2)), 0, 255, 0, 9);
 		$bgcolor = self::map(hexdec(substr($hash, 12, 2)), 0, 255, 0, 9);
 		$bg = self::map(hexdec(substr($hash, 14, 2)), 0, 255, 0, 12);
-		$svg = "<svg width=\"$size\" height=\"$size\" viewBox=\"0 0 300 300\">";
+		$svg = "<svg width=\"$size\" height=\"$size\" viewBox=\"0 0 300 300\" xmlns=\"http://www.w3.org/2000/svg\">";
 		if ($param['clip'] ?? false) {
 			self::$clip_id ++;
 			$clip_id = self::$clip_id;
@@ -60,31 +60,31 @@ class Robohash {
 	const colors = [
 		'colors'=>[
 			'#ff9800', // orange-500
-            '#e53935', // red-600
-            '#fdd835', // yellow-600
-            '#3f51b5', // indigo-500
-            '#03a9f4', // light-blue-500
-            '#9c27b0', // purple-500
-            '#009688', // teal-500
-            '#ec407a', // pink-400
-            '#8bc34a', // light-green-500
-            '#795548' // brown-500
+			'#e53935', // red-600
+			'#fdd835', // yellow-600
+			'#3f51b5', // indigo-500
+			'#03a9f4', // light-blue-500
+			'#9c27b0', // purple-500
+			'#009688', // teal-500
+			'#ec407a', // pink-400
+			'#8bc34a', // light-green-500
+			'#795548' // brown-500
 		],
 		'bgcolors'=>[
-            // Red
-            '#ff8a80', // red-a100
-            '#f48fb1', // pink-200
-            '#ea80fc', // purple-a100
-            // Blue
-            '#8c9eff', // indigo-a100
-            '#80d8ff', // light-blue-a100
-            '#cfd8dc', // blue-grey-100
-            // Green
-            '#1de9b6', // teal-a400
-            '#00c853', // green-a-700
-            // Orange
-            '#ff9e80', // deep-orange-a100
-            '#ffe57f' // amber-a100
+			// Red
+			'#ff8a80', // red-a100
+			'#f48fb1', // pink-200
+			'#ea80fc', // purple-a100
+			// Blue
+			'#8c9eff', // indigo-a100
+			'#80d8ff', // light-blue-a100
+			'#cfd8dc', // blue-grey-100
+			// Green
+			'#1de9b6', // teal-a400
+			'#00c853', // green-a-700
+			// Orange
+			'#ff9e80', // deep-orange-a100
+			'#ffe57f' // amber-a100
 		],
 	];
 	const parts = [
